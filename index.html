@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Latest Technology News & Insights</title>
+    <meta name="description" content="Stay updated with the latest technology trends, programming tutorials, and tech insights.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">TechBlog</a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to TechBlog</h1>
+                <p class="hero-subtitle">Discover the latest in technology, programming, and digital innovation</p>
+                <a href="#featured" class="cta-button">Explore Articles</a>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=600" alt="Technology workspace">
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Articles</h2>
+                <div class="articles-grid">
+                    <article class="article-card featured-card">
+                        <div class="article-image">
+                            <img src="/placeholder.svg?height=250&width=400" alt="AI and Machine Learning">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">AI & ML</span>
+                                <span class="date">Dec 20, 2024</span>
+                            </div>
+                            <h3 class="article-title">The Future of Artificial Intelligence in Web Development</h3>
+                            <p class="article-excerpt">Explore how AI is revolutionizing web development with automated coding, intelligent design systems, and enhanced user experiences.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="JavaScript Frameworks">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">JavaScript</span>
+                                <span class="date">Dec 18, 2024</span>
+                            </div>
+                            <h3 class="article-title">Modern JavaScript Frameworks: A Complete Guide</h3>
+                            <p class="article-excerpt">Compare React, Vue, and Angular to choose the right framework for your next project.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Cybersecurity">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Security</span>
+                                <span class="date">Dec 15, 2024</span>
+                            </div>
+                            <h3 class="article-title">Essential Cybersecurity Practices for Developers</h3>
+                            <p class="article-excerpt">Learn the fundamental security practices every developer should implement in their applications.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-image">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Cloud Computing">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-meta">
+                                <span class="category">Cloud</span>
+                                <span class="date">Dec 12, 2024</span>
+                            </div>
+                            <h3 class="article-title">Serverless Architecture: Benefits and Best Practices</h3>
+                            <p class="article-excerpt">Discover how serverless computing can improve scalability and reduce costs for your applications.</p>
+                            <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Get the latest tech insights delivered to your inbox</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required id="newsletter-email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="newsletter-message" id="newsletter-message"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechBlog</h3>
+                    <p>Your source for the latest technology news and insights.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">JavaScript</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Cloud</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
